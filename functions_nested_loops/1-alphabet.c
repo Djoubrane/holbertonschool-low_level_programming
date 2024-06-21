@@ -1,19 +1,16 @@
 #include "main.h"
-#ifndef MAIN_H
-#define MAIN_H
 
-int _putchar(char c);
-void print_alphabet(void);
+/**
+ * print_alphabet - Prints the alphabet in lowercase.
+ */
 
-#endif /* MAIN_H */
+void print_alphabet(void)
 {
-    char c = 'a';
+	char alphabet[] = "abcdefghijklmnopqrstuvwxyz\n";
+	int i;
 
-    while (c <= 'z')
-    {
-        _putchar(c);
-        c++;
-    }
-    _putchar('\n');
+	for (i = 0; alphabet[i] != '\0'; i++)
+	{
+		_putchar(alphabet[i]);
+	}
 }
-#endif /* MAIN_H */
