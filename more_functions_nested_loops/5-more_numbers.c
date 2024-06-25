@@ -7,28 +7,15 @@
 void more_numbers(void)
 {
 	int i, j;
-	char buffer[3];
 
-for (i = 0; i < 10; i++)
+	for (i = 1; i <= 10; i++)
 	{
-
-	for (j = 0; j <= 14; j++)
-	{
-	if (j >= 10)
+		for (j = 0; j <= 14; j++)
 		{
-		buffer[0] = '1';
-		buffer[1] = '0' + (j % 10);
-		buffer[2] = '\0';
-		_putchar(buffer[0]);
-		_putchar(buffer[1]);
+			if (j >= 10)
+				_putchar('1');
+			_putchar (j % 10 + '0');
 		}
-		else
-		{
-		buffer[0] = '0' + j;
-		buffer[1] = '\0';
-
-		}
-	}
-	_putchar('\n');
+		_putchar('\n');
 	}
 }
