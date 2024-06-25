@@ -26,7 +26,7 @@ for (i = 0; i < 10; i++)
 		{
 		buffer[0] = '0' + j;
 		buffer[1] = '\0';
-		_putchar(buffer[0]);
+
 		}
 	}
 	_putchar('\n');
